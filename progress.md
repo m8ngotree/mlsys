@@ -51,5 +51,8 @@ I spent today using Claude to deeply understand the naive matmul kernel. I was k
 **Learning Prompt:**
 > I want you to teach me so that I can understand this, go step-by-step and build my knowledge up from first principles, I want you to present information for quiz me at each step to ensure I have actually learned, don't immediately quiz, ask me if i have any questions, i will ask questions until i don't and then i will tell you to quiz me on everything you presented at each step and we can go from there, the end goal is for me to understand this code at a foundational level
 
-## October 27 - Day 10 of GPU Programming
+## October 27
 This is combining the last few days because I didn't get to spend much time each day, but I mainly worked on understanding the tiled matmul kernel with dynamic shared memory in PMPP Chapter 5 using Claude. I also read through PMPP Chapter 6 and learned things like thread coarsening. I think I got a pretty good understanding of all the concepts from Claude and testing them out on LeetGPU. I'm planning on reading through Simon Boehm's blog next (https://siboehm.com/articles/22/CUDA-MMM) to learn more about optimizing matmul kernels.
+
+## October 28
+Day 11 of GPU Programming: I read through the first part of Simon Boehm's blog on optimizing matmul kernels. It was mainly just a refresher of what I've learned from PMPP.
