@@ -1,5 +1,8 @@
 # Progress
 
+## November 5
+Day 15 of GPU Programming: I spent some time implementing my own 2D Blocktiling matmul kernel. On LeetGPU, I achieved 93.5% percentile for Tesla T4 and 81.3% for B200. I also spent time learning about vectorizing memory accesses from Simon Boehm's blog.
+
 ## November 4
 Day 14 of GPU Programming: I spent time understanding the 2D tiling matmul kernel in Simon Boehm's blog post and got a pretty good understanding of it.
 
