@@ -1,5 +1,11 @@
 # Progress
 
+## November 9
+Day 17 of ML Systems: I worked on understanding Kernel 6 from Simon Boehm's blog and implemented my own version of it. I worked on a matmul kernel with more optimizations such as transposition of shared memory, vectorized memory loading, and register blocking. I achieved 90.7% percentile performance on LeetGPU for B200. One of my tweets got liked by @therealkmans who works on LeetGPU.
+
+## November 6
+Day 16 of GPU Programming: I learned about vectorizing memory accesses by transposing shared memory matrices and studied Simon Boehm's kernel that implements this technique.
+
 ## November 5
 Day 15 of GPU Programming: I spent some time implementing my own 2D Blocktiling matmul kernel. On LeetGPU, I achieved 93.5% percentile for Tesla T4 and 81.3% for B200. I also spent time learning about vectorizing memory accesses from Simon Boehm's blog.
 
