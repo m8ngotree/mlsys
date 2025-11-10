@@ -1,5 +1,5 @@
 TODO:
-PMPP
+PMPP (https://www.cse.iitd.ac.in/~rijurekha/col851/necessary_reading/cudabook.pdf)
 LEETGPU
 MATMULS
 
