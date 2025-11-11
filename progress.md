@@ -1,5 +1,8 @@
 # Progress
 
+## November 10
+Day 18 of ML Systems: I worked on understanding Kernel 7 from Simon Boehm's blog in the evening. I initially had trouble understanding the linearization of the shared memory for the B matrix as well as the access patterns but I got Claude to explain it with visualizations which really helped me figure it out. I have the day off tomorrow so planning on finishing studying the rest of the kernels and moving on to something else.
+
 ## November 9
 Day 17 of ML Systems: I worked on understanding Kernel 6 from Simon Boehm's blog and implemented my own version of it. I worked on a matmul kernel with more optimizations such as transposition of shared memory, vectorized memory loading, and register blocking. I achieved 90.7% percentile performance on LeetGPU for B200. One of my tweets got liked by @therealkmans who works on LeetGPU.
 
