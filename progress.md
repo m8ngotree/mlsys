@@ -1,5 +1,8 @@
 # Progress
 
+## November 11
+Day 19 of ML Systems: I finished up studying the rest of the kernels from Simon Boehm's blog and learned about warp tiling. I'll start something new tomorrow.
+
 ## November 10
 Day 18 of ML Systems: I worked on understanding Kernel 7 from Simon Boehm's blog in the evening. I initially had trouble understanding the linearization of the shared memory for the B matrix as well as the access patterns but I got Claude to explain it with visualizations which really helped me figure it out. I have the day off tomorrow so planning on finishing studying the rest of the kernels and moving on to something else.
 
