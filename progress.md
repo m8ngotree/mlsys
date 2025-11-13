@@ -1,5 +1,8 @@
 # Progress
 
+## November 12
+Day 20 of ML Systems: I was a little inefficient with my studying today, but I mainly went through @maharshii ‘s softmax and understood the optimizations at a high level. Tomorrow, I’ll go through and start coding things out.
+
 ## November 11
 Day 19 of ML Systems: I finished up studying the rest of the kernels from Simon Boehm's blog and learned about warp tiling. I'll start something new tomorrow.
 
