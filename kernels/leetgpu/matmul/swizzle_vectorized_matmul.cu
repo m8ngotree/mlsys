@@ -1,3 +1,4 @@
+// https://siboehm.com/articles/22/CUDA-MMM
 // Doesn't work for all sizes
 // Optimizations: Block Tiling, Shared Memory Caching, Matrix A Transposition, Float4 Vectorized Loading, Thread Tiling, Register Blocking, Bank Conflict Resolution
 

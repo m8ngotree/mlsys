@@ -1,5 +1,8 @@
 # Progress
 
+## November 18
+Day 21 of ML Systems: I coded out the first 3 kernels of @maharshii 's softmax blog and learned more about the various optimizations such as the online algorithm and reductions as well as CUDA runtime functions. I spent about 3 hours total.
+
 ## November 12
 Day 20 of ML Systems: I was a little inefficient with my studying today, but I mainly went through @maharshii ‘s softmax and understood the optimizations at a high level. Tomorrow, I’ll go through and start coding things out.
 

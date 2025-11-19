@@ -1,3 +1,5 @@
+// https://siboehm.com/articles/22/CUDA-MMM
+
 #include <cuda_runtime.h>
 
 #define TILE_WIDTH 32
