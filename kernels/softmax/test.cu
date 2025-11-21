@@ -11,6 +11,8 @@
 void run_kernel_0(float* __restrict__ matd, float* __restrict__ resd, int M, int N);
 void run_kernel_1(float* __restrict__ matd, float* __restrict__ resd, int M, int N);
 void run_kernel_2(float* __restrict__ matd, float* __restrict__ resd, int M, int N);
+void run_kernel_3(float* __restrict__ matd, float* __restrict__ resd, int M, int N);
+float run_kernel_4(float* __restrict__ matd, float* __restrict__ resd, int M, int N);
 
 float random_normal_clamped(float min, float max) {
     float u1 = (float)rand() / RAND_MAX;
@@ -67,6 +69,12 @@ int main() {
 
     printf("\n--- Kernel 2: Shared Memory (parallel reduction, one block per row) ---\n");
     run_kernel_2(matd, resd, M, N);
+
+    printf("\n--- Kernel 3: Warp Shuffle (warp-level primitives for reduction) ---\n");
+    run_kernel_3(matd, resd, M, N);
+
+    printf("\n--- Kernel 4: Vectorized (float4 loads + warp shuffle primitives) ---\n");
+    run_kernel_4(matd, resd, M, N);
 
     printf("\n========== All kernels completed ==========\n\n");
 

@@ -30,7 +30,6 @@ inline void cudaAssert(cudaError_t code, const char *file, int line) {
 #endif
 
 
-// warp reduce for any Op
 template<typename T, typename Op>
 __device__ __forceinline__ T warpReduce(T val, Op op, unsigned int mask = 0xffffffffu) {
     for(int offset = WARP_SIZE >> 1; offset > 0; offset >>= 1)
@@ -38,7 +37,6 @@ __device__ __forceinline__ T warpReduce(T val, Op op, unsigned int mask = 0xffff
     return val;
 }
 
-// warp reduce for sum and max using lambda functions
 template<typename T>
 __device__ __forceinline__ T warpReduceSum(T val) {
     return warpReduce(val, []__device__(T a, T b) { return a + b; });
@@ -57,29 +55,18 @@ __device__ __forceinline__ void blockReduce(T val, T *smem, T identity, Op op) {
 
     val = warpReduce(val, op);
 
-    // when blockDim is greater than 32, we need to do a block level reduction
-    // AFTER warp level reductions since we have the 8 maximum values that needs to be reduced again
-    // the global max will be stored in the first warp
     if (blockDim.x > WARP_SIZE) {
         if (lane == 0) {
-            // which warp are we at?
-            // store the value in its first thread index
             smem[wid] = val;
         }
         __syncthreads();
 
-        // first warp will do global reduction only
-        // this is possible because we stored the values in the shared memory
-        // so the threads in the first warp will read from it and then reduce
         if (tx < WARP_SIZE) {
             val = (tx < CEIL_DIV(blockDim.x, WARP_SIZE)) ? smem[tx] : identity;
             val = warpReduce(val, op);
             if (tx == 0) smem[0] = val;
         }
     } else {
-        // this is for when the number of threads in a block are not
-        // greater than the warp size, in that case we already reduced
-        // so we can store the value
         if (tx == 0) smem[0] = val;
     }
 }

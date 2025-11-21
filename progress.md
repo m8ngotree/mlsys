@@ -1,5 +1,8 @@
 # Progress
 
+## November 20
+Day 22 of ML Systems: I studied the final 2 softmax kernels from @maharshii 's softmax blog and learned about warp-level primitives like shuffling, function templates for block/warp reducing, and vectorized memory loads. I coded out the kernels as well. This is technically for today and yesterday but I didn't get that much done yesterday. I spent about 3 hours today.
+
 ## November 18
 Day 21 of ML Systems: I coded out the first 3 kernels of @maharshii 's softmax blog and learned more about the various optimizations such as the online algorithm and reductions as well as CUDA runtime functions. I spent about 3 hours total.
 
