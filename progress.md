@@ -1,5 +1,8 @@
 # Progress
 
+## November 21
+Day 22 of ML Systems: I read through @maharshii 's SGEMV blog and started coding out some of the kernels. I plan on finishing the rest of the kernels tomorrow.
+
 ## November 20
 Day 22 of ML Systems: I studied the final 2 softmax kernels from @maharshii 's softmax blog and learned about warp-level primitives like shuffling, function templates for block/warp reducing, and vectorized memory loads. I coded out the kernels as well. This is technically for today and yesterday but I didn't get that much done yesterday. I spent about 3 hours today.
 
