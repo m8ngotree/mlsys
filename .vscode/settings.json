@@ -1,0 +1,12 @@
+{
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "C_Cpp.intelliSenseEngine": "default",
+    "files.associations": {
+        "*.cu": "cuda-cpp",
+        "*.cuh": "cuda-cpp"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/matvec/include"
+    ]
+}
+
