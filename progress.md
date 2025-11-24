@@ -1,5 +1,11 @@
 # Progress
 
+## November 23
+Day 24 of ML Systems: I read and coded out the kernels from @aryagxr 's CUDA layernorm blog. It was fairly similar to the SGEMV/softmax kernels I did, but it was good to practice writing kernels using techniques I've learned such as reductions, warp shuffling, and vectorized memory loads.
+
+## November 22
+Day 23 of ML Systems: I coded out the kernels from @maharshii 's SGEMV blog. I learned about a lot of different things like cuBLAS, various CUDA library features, Makefiles, and how to structure .cuh/.cu files.
+
 ## November 21
 Day 22 of ML Systems: I read through @maharshii 's SGEMV blog and started coding out some of the kernels. I plan on finishing the rest of the kernels tomorrow.
 

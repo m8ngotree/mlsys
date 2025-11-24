@@ -1,3 +1,5 @@
+https://maharshi.bearblog.dev/optimizing-sgemv-cuda/
+
 #include <cublas_v2.h>
 #include <cuda.h>
 #include <cuda_runtime.h>

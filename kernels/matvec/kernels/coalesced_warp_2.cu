@@ -1,3 +1,5 @@
+https://maharshi.bearblog.dev/optimizing-sgemv-cuda/
+
 #include <assert.h>
 #include <cuda.h>
 #include <cuda_runtime.h>
