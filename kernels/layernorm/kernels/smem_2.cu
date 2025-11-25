@@ -1,3 +1,5 @@
+https://aryagxr.com/blogs/cuda-optimizing-layernorm
+
 #include <cuda_runtime.h>
 #include <math.h>
 #include <iostream>

@@ -1,5 +1,8 @@
 # Progress
 
+## November 24
+Day 25 of ML Systems: I read the first few parts of Alpindale's top-k kernel blog (https://blog.alpindale.net/posts/top_k_cuda/). It's a really good read - the optimizations are really interesting / unique, and I spent a lot of time learning about the various floating-point formats and concepts such as denormal/subnormal numbers. I'll keep reading through it tomorrow.
+
 ## November 23
 Day 24 of ML Systems: I read and coded out the kernels from @aryagxr 's CUDA layernorm blog. It was fairly similar to the SGEMV/softmax kernels I did, but it was good to practice writing kernels using techniques I've learned such as reductions, warp shuffling, and vectorized memory loads.
 
