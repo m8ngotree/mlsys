@@ -1,5 +1,8 @@
 # Progress
 
+## November 25
+Day 26 of ML Systems: I finished reading Alpindale's top-k kernel blog. There was a lot to digest especially because I wasn't too familiar with PTX and some of the optimizations. I decided to start doing my own stuff from tomorrow onwards as I feel like I've gotten the basics down and probably spent too much time reading other people's stuff instead of doing my own projects. I'll mainly be focusing on systems work for quantization, training, & inference. I plan on starting a deep dive into quantization tomorrow.
+
 ## November 24
 Day 25 of ML Systems: I read the first few parts of Alpindale's top-k kernel blog (https://blog.alpindale.net/posts/top_k_cuda/). It's a really good read - the optimizations are really interesting / unique, and I spent a lot of time learning about the various floating-point formats and concepts such as denormal/subnormal numbers. I'll keep reading through it tomorrow.
 
