@@ -141,6 +141,32 @@ int main() {
     cudaFree(d_quantized);
     cudaFree(d_dequantized);
     cudaFree(d_max_val);
+
+    // Benchmark
+    cudaEvent_t start, stop;
+    cudaEventCreate(&start);
+    cudaEventCreate(&stop);
+
+    int num_iters = 100;
+
+    cudaEventRecord(start);
+    for (int i = 0; i < num_iters; i++) {
+        quantize_kernel<<<num_blocks, block_size>>>(d_input, d_quantized, scale, N);
+    }
+    cudaEventRecord(stop);
+    cudaEventSynchronize(stop);
+
+    float ms;
+    cudaEventElapsedTime(&ms, start, stop);
+    float avg_ms = ms / num_iters;
+    float bytes_transferred = bytes_fp16 + bytes_int8; // read FP16 + write INT8
+    float bandwidth_gbs = (bytes_transferred / avg_ms) / 1e6; // GB/s
+
+    printf("\n=== Benchmark Results ===\n");
+    printf("Quantization: %.3f ms, %.2f GB/s\n", avg_ms, bandwidth_gbs);
+
+    cudaEventDestroy(start);
+    cudaEventDestroy(stop);
     
     return 0;
 }
