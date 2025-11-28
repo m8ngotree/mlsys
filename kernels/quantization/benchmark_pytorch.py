@@ -1,20 +1,15 @@
-# benchmark_pytorch.py
 import torch
 import time
 
-# Setup
-N = 128 * 1024 * 1024  # 128M elements
+N = 128 * 1024 * 1024
 device = 'cuda'
 
-# Create random FP16 tensor
 x = torch.randn(N, dtype=torch.float16, device=device) * 2.0
 
-# Warmup
 for _ in range(10):
     scale = x.abs().max() / 127.0
     x_quant = torch.clamp(torch.round(x / scale), -127, 127).to(torch.int8)
 
-# Benchmark quantization
 torch.cuda.synchronize()
 start = time.time()
 num_iters = 100
@@ -27,7 +22,7 @@ torch.cuda.synchronize()
 end = time.time()
 
 avg_time_ms = (end - start) * 1000 / num_iters
-bytes_transferred = N * 2 + N * 1  # Read FP16 + write INT8
+bytes_transferred = N * 2 + N * 1
 bandwidth_gbs = (bytes_transferred / (avg_time_ms / 1000)) / 1e9
 
 print(f"PyTorch Quantization:")
