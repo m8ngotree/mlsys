@@ -5,6 +5,11 @@
 #include <math.h>
 #include <algorithm>
 
+// Define half4 struct (CUDA doesn't have a built-in half4 type)
+struct half4 {
+    half x, y, z, w;
+};
+
 __device__ __forceinline__ float atomicMaxFloat(float* addr, float value) {
     int* addr_as_int = (int*)addr;
     int old = *addr_as_int;
