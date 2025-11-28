@@ -1,0 +1,31 @@
+root@roaring-alligator-of-unity:~/mlsys/kernels/quantization# python3 verify_correctness.py
+Generating test data (N=1048576)...
+Computing PyTorch reference...
+Reference scale: 0.075562
+Reference output range: [-122, 127]
+Testing 4 kernel(s)...
+Testing quantize_naive_0...
+  Scale difference: 0.000021 (ref: 0.075562, kernel: 0.075541)
+  quantize_naive_0: Output matches PyTorch (within tolerance)
+     7968/1048576 values differ by ±1 (due to small scale difference)
+Testing quantize_reduction_3...
+  Scale difference: 0.000021 (ref: 0.075562, kernel: 0.075541)
+  quantize_reduction_3: Output matches PyTorch (within tolerance)
+     7968/1048576 values differ by ±1 (due to small scale difference)
+Testing quantize_smem_2...
+  Scale difference: 0.000021 (ref: 0.075562, kernel: 0.075541)
+  quantize_smem_2: Output matches PyTorch (within tolerance)
+     7968/1048576 values differ by ±1 (due to small scale difference)
+Testing quantize_vectorized_1...
+  Scale difference: 0.000021 (ref: 0.075562, kernel: 0.075541)
+  quantize_vectorized_1: Output matches PyTorch (within tolerance)
+     7968/1048576 values differ by ±1 (due to small scale difference)
+============================================================
+Summary:
+============================================================
+  PASS: quantize_naive_0
+  PASS: quantize_reduction_3
+  PASS: quantize_smem_2
+  PASS: quantize_vectorized_1
+All kernels match PyTorch reference!
+root@roaring-alligator-of-unity:~/mlsys/kernels/quantization# 

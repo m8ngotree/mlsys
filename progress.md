@@ -1,5 +1,8 @@
 # Progress
 
+## November 26
+Day 27 of ML Systems: I basically spent all day learning about INT8 quantization and created a series of quantization kernels. There was a lot of stuff I learned in between about numerics, but a lot of the concepts such as warp shuffling, shared memory, coalescing, vectorizing, etc. carried over. I was able to achieve a 5x speedup compared to PyTorch and verified the correctness of my kernels compared to PyTorch. Tomorrow, I plan on learning about bit packing and writing some related kernels.
+
 ## November 25
 Day 26 of ML Systems: I finished reading Alpindale's top-k kernel blog. There was a lot to digest especially because I wasn't too familiar with PTX and some of the optimizations. I decided to start doing my own stuff from tomorrow onwards as I feel like I've gotten the basics down and probably spent too much time reading other people's stuff instead of doing my own projects. I'll mainly be focusing on systems work for quantization, training, & inference. I plan on starting a deep dive into quantization tomorrow.
 
