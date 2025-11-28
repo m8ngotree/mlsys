@@ -28,5 +28,5 @@ bandwidth_gbs = (bytes_transferred / (avg_time_ms / 1000)) / 1e9
 print(f"PyTorch Quantization:")
 print(f"Time: {avg_time_ms:.3f} ms")
 print(f"Bandwidth: {bandwidth_gbs:.2f} GB/s")
-print(f"\nYour best kernel: 774 GB/s")
+print(f"\nBest kernel: 774 GB/s")
 print(f"Speedup: {774/bandwidth_gbs:.2f}x")
