@@ -1,0 +1,75 @@
+root@quiet-sly-reindeer:~/mlsys# nvcc -o quantize_naive quantize_naive_0.cu -arch=sm_80
+cc1plus: fatal error: quantize_naive_0.cu: No such file or directory
+compilation terminated.
+root@quiet-sly-reindeer:~/mlsys# cd kernels/quantization
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# nvcc -o quantize_naive quantize_naive_0.cu -arch=sm_80
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# ./quantize_naive
+Max absolute value 2.000000
+Scale 0.015748
+=== Validation Results ===
+Max quantization error: 0.007874
+Average quantization error: 0.003937
+Expected max error (scale): 0.015748
+=== Sample Values ===
+Original: -1.8662 -> Quantized: -119 -> Dequantized: -1.8740 (error: 0.0078)
+Original: -0.6802 -> Quantized:  -43 -> Dequantized: -0.6772 (error: 0.0029)
+Original:  0.7627 -> Quantized:   48 -> Dequantized:  0.7559 (error: 0.0068)
+Original: -0.3101 -> Quantized:  -20 -> Dequantized: -0.3149 (error: 0.0049)
+Original: -1.1748 -> Quantized:  -75 -> Dequantized: -1.1807 (error: 0.0059)
+=== Benchmark Results ===
+Problem size: 134217728 elements (402.65 MB)
+Quantization: 0.927 ms, 434.45 GB/s
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# 
+
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# ./quantize_vectorized
+Max absolute value 2.000000
+Scale 0.015748
+=== Validation Results ===
+Max quantization error: 0.007874
+Average quantization error: 0.003937
+Expected max error (scale): 0.015748
+=== Sample Values ===
+Original: -1.8662 -> Quantized: -119 -> Dequantized: -1.8740 (error: 0.0078)
+Original: -0.6802 -> Quantized:  -43 -> Dequantized: -0.6772 (error: 0.0029)
+Original:  0.7627 -> Quantized:   48 -> Dequantized:  0.7559 (error: 0.0068)
+Original: -0.3101 -> Quantized:  -20 -> Dequantized: -0.3149 (error: 0.0049)
+Original: -1.1748 -> Quantized:  -75 -> Dequantized: -1.1807 (error: 0.0059)
+=== Benchmark Results ===
+Problem size: 134217728 elements (402.65 MB)
+Quantization: 0.558 ms, 722.07 GB/s
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# 
+
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# ./quantize_smem
+Max absolute value 2.000000
+Scale 0.015748
+=== Validation Results ===
+Max quantization error: 0.007874
+Average quantization error: 0.003937
+Expected max error (scale): 0.015748
+=== Sample Values ===
+Original: -1.8662 -> Quantized: -119 -> Dequantized: -1.8740 (error: 0.0078)
+Original: -0.6802 -> Quantized:  -43 -> Dequantized: -0.6772 (error: 0.0029)
+Original:  0.7627 -> Quantized:   48 -> Dequantized:  0.7559 (error: 0.0068)
+Original: -0.3101 -> Quantized:  -20 -> Dequantized: -0.3149 (error: 0.0049)
+Original: -1.1748 -> Quantized:  -75 -> Dequantized: -1.1807 (error: 0.0059)
+=== Benchmark Results ===
+Problem size: 134217728 elements (402.65 MB)
+Quantization: 0.579 ms, 695.91 GB/s
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# 
+
+root@quiet-sly-reindeer:~/mlsys/kernels/quantization# ./quantize_reduction
+Max absolute value 2.000000
+Scale 0.015748
+=== Validation Results ===
+Max quantization error: 0.007874
+Average quantization error: 0.003937
+Expected max error (scale): 0.015748
+=== Sample Values ===
+Original: -1.8662 -> Quantized: -119 -> Dequantized: -1.8740 (error: 0.0078)
+Original: -0.6802 -> Quantized:  -43 -> Dequantized: -0.6772 (error: 0.0029)
+Original:  0.7627 -> Quantized:   48 -> Dequantized:  0.7559 (error: 0.0068)
+Original: -0.3101 -> Quantized:  -20 -> Dequantized: -0.3149 (error: 0.0049)
+Original: -1.1748 -> Quantized:  -75 -> Dequantized: -1.1807 (error: 0.0059)
+=== Benchmark Results ===
+Problem size: 134217728 elements (402.65 MB)
+Quantization: 0.520 ms, 774.09 GB/s

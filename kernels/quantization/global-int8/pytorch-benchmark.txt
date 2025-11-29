@@ -1,0 +1,5 @@
+PyTorch Quantization:
+Time: 2.718 ms
+Bandwidth: 148.15 GB/s
+Best kernel: 774 GB/s
+Speedup: 5.22x

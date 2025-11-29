@@ -1,6 +1,8 @@
 # Progress
 
-## November 26
+## Day 28 of ML Systems: I learned about bit packing/unpacking and implemented a naive kernel. I didn't get as much done as I wanted to, but I decided to hop into learning about MXFP/NVFP. I don't really know if I have all the fundamentals yet, but I decided I'd rather learn top-down than bottom-up.
+
+## November 27
 Day 27 of ML Systems: I basically spent all day learning about INT8 quantization and created a series of quantization kernels. There was a lot of stuff I learned in between about numerics, but a lot of the concepts such as warp shuffling, shared memory, coalescing, vectorizing, etc. carried over. I was able to achieve a 5x speedup compared to PyTorch and verified the correctness of my kernels compared to PyTorch. Tomorrow, I plan on learning about bit packing and writing some related kernels.
 
 ## November 25
