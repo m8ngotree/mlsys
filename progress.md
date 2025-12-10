@@ -1,6 +1,7 @@
 # Progress
 
-
+## December 9
+Day 30 of ML Systems: I started working on my MXFP / NVFP quantization/dequentization kernels.
 
 ## December 8
 Day 29 of ML Systems: I finished learning about MXFP/NVFP. I plan on implementing quantization/dequantization, fused GEMM, and conversion kernels for these formats in the coming days.
