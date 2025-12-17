@@ -1,5 +1,8 @@
 # Progress
 
+## December 16
+Day 31 of ML Systems: I started working on a fused GEMM / MXFP8 dequantization kernel. I spent time writing out the tile loading and learning how to manage the scales while tiling.
+
 ## December 9
 Day 30 of ML Systems: I started working on my MXFP / NVFP quantization/dequentization kernels.
 
