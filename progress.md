@@ -1,5 +1,8 @@
 # Progress
 
+## December 17
+Day 32 of ML Systems: I mostly finished writing the fused GEMM / MXFP8 dequantization kernel. There is still some stuff I need to look into for the dequantization, but I plan on doing that and writing some tests to compare performance to PyTorch and separate kernels.
+
 ## December 16
 Day 31 of ML Systems: I started working on a fused GEMM / MXFP8 dequantization kernel. I spent time writing out the tile loading and learning how to manage the scales while tiling.
 
