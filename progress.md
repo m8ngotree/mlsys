@@ -1,5 +1,8 @@
 # Progress
 
+## December 19
+Day 33 of ML Systems: I finished writing code and testing for the naive fused GEMM / MXFP8 dequantization kernel. I plan on doing the optimized and tensor core versions tomorrow.
+
 ## December 17
 Day 32 of ML Systems: I mostly finished writing the fused GEMM / MXFP8 dequantization kernel. There is still some stuff I need to look into for the dequantization, but I plan on doing that and writing some tests to compare performance to PyTorch and separate kernels.
 
