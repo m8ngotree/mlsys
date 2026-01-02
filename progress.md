@@ -1,5 +1,10 @@
 # Progress
 
+## January 1
+Day 34 of ML Systems: I pivoted again and decided to learn concepts I'm interested in related to inference and make open source contributions to things like SGLang. I did some studying today by reviewing attention mechanisms and just scrolling through resources for SGLang. Tomorrow I plan on reading through a lot of documentation.
+
+## 2026
+
 ## December 19
 Day 33 of ML Systems: I finished writing code and testing for the naive fused GEMM / MXFP8 dequantization kernel. I plan on doing the optimized and tensor core versions tomorrow.
 
@@ -125,3 +130,5 @@ Spent time learning CUDA / systems basics from the following blogs:
 - https://horace.io/brrr_intro.html
 
 I realized I don't have a solid understanding of the transformer / CUDA code in the first blog, so I'll spend tomorrow really trying to understand it.
+
+## 2025
