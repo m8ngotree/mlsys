@@ -1,5 +1,8 @@
 # Progress
 
+## January 2
+Day 35 of ML Systems: I spent today looking into RadixArk's Miles repo and reading documentation. I think I will focus on making open source contributions to this since it is integrated with SGLang and Megatron-LM. I did some reading on speculative decoding - I'll try to make contributions related to this.
+
 ## January 1
 Day 34 of ML Systems: I pivoted again and decided to learn concepts I'm interested in related to inference and make open source contributions to things like SGLang. I did some studying today by reviewing attention mechanisms and just scrolling through resources for SGLang. Tomorrow I plan on reading through a lot of documentation.
 
