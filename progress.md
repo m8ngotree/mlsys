@@ -1,5 +1,8 @@
 # Progress
 
+## January 3
+Day 36 of ML Systems: I spent a few hours today doing a deep dive into speculative decoding by learning from Claude. I learned how speculative decoding works along with the math behind the verification algorithm - Claude was really helpful/useful in teaching me this. I briefly started doing a deep dive into the Miles codebase but I'll do more on this tomorrow.
+
 ## January 2
 Day 35 of ML Systems: I spent today looking into RadixArk's Miles repo and reading documentation. I think I will focus on making open source contributions to this since it is integrated with SGLang and Megatron-LM. I did some reading on speculative decoding - I'll try to make contributions related to this.
 
