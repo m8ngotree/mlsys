@@ -1,5 +1,8 @@
 # Progress
 
+## January 4
+Day 37 of ML Systems: I only had two hours today because of a long drive, but I just used Claude to walk me through the Miles codebase. I learned about MoE architectures and how Miles uses Ray for distributed computing. I'll keep learning the codebase tomorrow.
+
 ## January 3
 Day 36 of ML Systems: I spent a few hours today doing a deep dive into speculative decoding by learning from Claude. I learned how speculative decoding works along with the math behind the verification algorithm - Claude was really helpful/useful in teaching me this. I briefly started doing a deep dive into the Miles codebase but I'll do more on this tomorrow.
 
