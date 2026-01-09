@@ -1,5 +1,8 @@
 # Progress
 
+## January 8
+Day 38 of ML Systems: I finished learning the Miles codebase focusing on things like the RL math, distributed training with FDSP, memory management, and SGLang integration. I'll do the same process for SGLang and start working on PRs. Using the Claude Code website terminal with GItHub integration really helps for learning the codebase by prompting Claude.
+
 ## January 4
 Day 37 of ML Systems: I only had two hours today because of a long drive, but I just used Claude to walk me through the Miles codebase. I learned about MoE architectures and how Miles uses Ray for distributed computing. I'll keep learning the codebase tomorrow.
 
