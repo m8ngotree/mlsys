@@ -1,5 +1,8 @@
 # Progress
 
+## January 9
+Day 39 of ML Systems: I did a walkthrough of the SGLang codebase with Claude and learned about like like the frontend API and runtime engine. I will start working on PRs for OSS repos like Miles, SGLang, and Megatron-LM tomorrow.
+
 ## January 8
 Day 38 of ML Systems: I finished learning the Miles codebase focusing on things like the RL math, distributed training with FDSP, memory management, and SGLang integration. I'll do the same process for SGLang and start working on PRs. Using the Claude Code website terminal with GItHub integration really helps for learning the codebase by prompting Claude.
 
