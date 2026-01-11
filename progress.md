@@ -1,5 +1,8 @@
 # Progress
 
+## January 10
+Day 40 of ML Systems: I decided to work on a PR integrating SageAttention into SGLang for 8-bit quantization. I basically spent the day working on learning the fundamentals of attention and various inference concepts. I used Claude to walk me through everything such as attention math, kv-cache, prefill vs. decode, Grouped Query / Multi Query / Paged Attention, prefill-decode disaggregation, and the SagedAttention paper. This was the first time I felt like I really understood the transformer / attention math thanks to Claude. I'll start work on the actual PR tomorrow.
+
 ## January 9
 Day 39 of ML Systems: I did a walkthrough of the SGLang codebase with Claude and learned about like like the frontend API and runtime engine. I will start working on PRs for OSS repos like Miles, SGLang, and Megatron-LM tomorrow.
 
