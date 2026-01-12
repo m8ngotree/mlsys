@@ -1,5 +1,8 @@
 # Progress
 
+## January 11
+Day 41 of ML Systems: I started working on implementing SageAttention for 8-bit quantization in SGLang. I mainly focused on create an attention backend and just understanding the overall codebase and files from other attention types.
+
 ## January 10
 Day 40 of ML Systems: I decided to work on a PR integrating SageAttention into SGLang for 8-bit quantization. I basically spent the day working on learning the fundamentals of attention and various inference concepts. I used Claude to walk me through everything such as attention math, kv-cache, prefill vs. decode, Grouped Query / Multi Query / Paged Attention, prefill-decode disaggregation, and the SagedAttention paper. This was the first time I felt like I really understood the transformer / attention math thanks to Claude. I'll start work on the actual PR tomorrow.
 
