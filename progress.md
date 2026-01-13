@@ -1,5 +1,8 @@
 # Progress
 
+## January 12
+Day 42 of ML Systems: I didn't have that much time today so I just spent some time reviewing the prefill/decode/kv-cache/attention math I learned a few days ago.
+
 ## January 11
 Day 41 of ML Systems: I started working on implementing SageAttention for 8-bit quantization in SGLang. I mainly focused on create an attention backend and just understanding the overall codebase and files from other attention types.
 
