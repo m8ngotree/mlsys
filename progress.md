@@ -1,5 +1,8 @@
 # Progress
 
+## January 13
+Day 43 of ML Systems: I just spent time fixing my SageAttention backend code and also doing unit testing for it.
+
 ## January 12
 Day 42 of ML Systems: I didn't have that much time today so I just spent some time reviewing the prefill/decode/kv-cache/attention math I learned a few days ago.
 
