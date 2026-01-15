@@ -1,5 +1,8 @@
 # Progress
 
+## January 14
+Day 44 of ML Systems: I just spent time looking through SGLang code and getting a better understanding of the code I need to add for the PR I'm making.
+
 ## January 13
 Day 43 of ML Systems: I just spent time fixing my SageAttention backend code and also doing unit testing for it.
 
