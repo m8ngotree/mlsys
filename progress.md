@@ -1,5 +1,8 @@
 # Progress
 
+## January 15
+Day 45 of ML Systems: I spent time writing / understanding code from Opus on how to gather the kv cache in SGLang so that it is in contiguous memory for SageAttention to be effective.
+
 ## January 14
 Day 44 of ML Systems: I just spent time looking through SGLang code and getting a better understanding of the code I need to add for the PR I'm making.
 
