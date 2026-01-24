@@ -1,5 +1,8 @@
 # Progress
 
+## January 24
+Day 46 of ML Systems: I couldn’t really focus on deep work so I read through all the SGLang roadmap issues on GitHub and made a plan on what to work on. I’m interested in things like communication quantization, MoE routing, and other various inference optimization opportunities. I’m really trying to finish my SageAttention PR this weekend since I’ve taken way too long on it but I’ll tackle these new ideas after that.
+
 ## January 15
 Day 45 of ML Systems: I spent time writing / understanding code from Opus on how to gather the kv cache in SGLang so that it is in contiguous memory for SageAttention to be effective.
 
