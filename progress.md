@@ -1,5 +1,8 @@
 # Progress
 
+## January 25
+Day 47 of ML Systems: I mainly worked on testing my SageAttention code and going through the code to make sure everything looks right. I made a lot of changes like implementing the SageAttention for decode as well instead of just prefill, but I need to test everything again and go through it again tomorrow.
+
 ## January 24
 Day 46 of ML Systems: I couldn’t really focus on deep work so I read through all the SGLang roadmap issues on GitHub and made a plan on what to work on. I’m interested in things like communication quantization, MoE routing, and other various inference optimization opportunities. I’m really trying to finish my SageAttention PR this weekend since I’ve taken way too long on it but I’ll tackle these new ideas after that.
 
