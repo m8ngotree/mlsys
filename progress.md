@@ -1,5 +1,8 @@
 # Progress
 
+## January 27
+Day 49 of ML Systems: I just spent today learning about MoEs, various types of parallelism, and collective operations in the SGLang codebase. I'll just keep working tomorrow on quantization and hopefully start writing code.
+
 ## January 25
 Day 48 of ML Systems: I just wrapped up my SageAttention work - I fully implemented it but I ended up using another attention backend as a fallback for some cases so it didn't really work all that well. I just decided to move on to working on communication quantization and hopefully get better results there.
 
