@@ -1,5 +1,8 @@
 # Progress
 
+## January 28
+Day 50 of ML Systems: I started working on code for communication quantization. I made a utils file for general quantization/dequantization functions and started looking into incorporating it into AllReduce.
+
 ## January 27
 Day 49 of ML Systems: I just spent today learning about MoEs, various types of parallelism, and collective operations in the SGLang codebase. I'll just keep working tomorrow on quantization and hopefully start writing code.
 
