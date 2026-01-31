@@ -1,5 +1,11 @@
 # Progress
 
+January 30
+Day 52 of ML Systems: I mainly worked on the final steps of my quantized AllReduce PR and finished the feature and tests.
+
+January 29
+Day 51 of ML Systems: I mainly worked on the quantized AllReduce functon and had to rewrite the implementation as summing up in FP8 could lead to overflow errors.
+
 ## January 28
 Day 50 of ML Systems: I started working on code for communication quantization. I made a utils file for general quantization/dequantization functions and started looking into incorporating it into AllReduce.
 
