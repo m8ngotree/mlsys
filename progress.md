@@ -1,9 +1,12 @@
 # Progress
 
-January 30
+## February 4
+Day 53 of ML Systems: I decided to start studying open source repos and learning technical concepts / details while also mixing in work on PRs. I decided to study the ZeRO optimizer in DeepSpeed. I am also trying to write blog posts with all the technical things I learn. This is the start of my first one: https://sysgod.bearblog.dev/understanding-the-zero-optimizer-in-deepspeed-02-04-26/.
+
+## January 30
 Day 52 of ML Systems: I mainly worked on the final steps of my quantized AllReduce PR and finished the feature and tests.
 
-January 29
+## January 29
 Day 51 of ML Systems: I mainly worked on the quantized AllReduce functon and had to rewrite the implementation as summing up in FP8 could lead to overflow errors.
 
 ## January 28
