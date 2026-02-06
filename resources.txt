@@ -1,26 +1,47 @@
 TODO:
-PMPP (https://www.cse.iitd.ac.in/~rijurekha/col851/necessary_reading/cudabook.pdf)
+PMPP
 LEETGPU
 MATMULS
 
 IMPLEMENT:
-MATMULS
-https://maharshi.bearblog.dev/optimizing-softmax-cuda/
-https://aryagxr.com/blogs/cuda-optimizing-layernorm
+https://blog.alpindale.net/posts/top_k_cuda/
+https://1y33.github.io/blog/rope_kernel/
+htmlhttps://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog
+https://gau-nernst.github.io/fa-5090/
 https://andrewkchan.dev/posts/yalm.html#section-1.1
-ATTENTION
+
+https://siboehm.com/articles/22/CUDA-MMM - ✅
+https://maharshi.bearblog.dev/optimizing-softmax-cuda/ - ✅
+https://maharshi.bearblog.dev/optimizing-sgemv-cuda/ - ✅
+https://aryagxr.com/blogs/cuda-optimizing-layernorm  - ✅
+
+CLAUDE CHATS
+INFERENCE
+QUANTIZATION
 KERNELS
+ATTENTION
 MOE
+MATMULS
+EVERYTHING ELSE
 
 READ:
+X BOOKMARKS
+https://discuss.pytorch.org/t/distributed-w-torchtitan-optimizing-checkpointing-efficiency-with-pytorch-dcp/211250
+https://www.radicalnumerics.ai/blog/nvfp4-part1
+https://phucnguyen.dev/
+https://github.com/anthropics/original_performance_takehome
+https://nousresearch.com/moe-scaling-field-notes/
+https://cameronrwolfe.substack.com/p/moe-llms
+https://github.com/cfregly/ai-performance-engineering
+https://sankalp.bearblog.dev/how-prompt-caching-works/
 https://cursor.com/blog/kernels
-https://andrewkchan.dev/posts/yalm.html
 https://www.together.ai/blog/adaptive-learning-speculator-system-atlas
 https://github.com/vllm-project/vllm
 https://docs.vllm.ai/en/latest/design/kernel/paged_attention.html
 https://blog.vllm.ai/2025/09/05/anatomy-of-vllm.html
 
 Attention:
+https://github.com/thu-ml/SageAttention
 https://www.youtube.com/watch?v=zy8ChVd_oTM
 https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad
 https://www.stephendiehl.com/posts/flash_attention/
@@ -37,24 +58,29 @@ https://github.com/shi-labs/natten
 https://github.com/AlpinDale?tab=repositories
 
 Inference:
+https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms
 https://bentoml.com/llm/ - ✅
 https://andrewkchan.dev/posts/yalm.html#section-1.1
 https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/
 https://github.com/vllm-project/vllm
 https://docs.vllm.ai/en/latest/design/kernel/paged_attention.html
 https://blog.vllm.ai/2025/09/05/anatomy-of-vllm.html
+https://blog.vllm.ai/
 https://pytorch.org/blog/flash-decoding/
 https://bench.flashinfer.ai/
 https://flashinfer.ai/2024/12/16/flashinfer-v02-release.html
 https://flashinfer.ai/2024/02/02/cascade-inference.html
 https://github.com/xlite-dev/Awesome-LLM-Inference
 https://rentry.org/samplers
+https://1y33.github.io/blog/rope_kernel/
 
 Speculative Decoding
 https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/
 https://developer.nvidia.com/blog/tensorrt-llm-speculative-decoding-boosts-inference-throughput-by-up-to-3-6x/
 
 MoE:
+https://cameronrwolfe.substack.com/p/moe-llms
+https://claude.ai/chat/02eeb7da-31d5-4941-874b-2dcfb7c9af75
 https://github.com/woct0rdho/transformers-qwen3-moe-fused
 https://bit-ml.github.io/blog/post/fused-swiglu-kernel/
 https://pytorch.org/blog/accelerating-moe-model/
@@ -71,6 +97,8 @@ https://docs.jax.dev/en/latest/pallas/gpu/blackwell_matmul.html
 https://maharshi.bearblog.dev/optimizing-sgemv-cuda/
 
 Kernels:
+https://hazyresearch.stanford.edu/blog/2024-05-12-tk
+https://github.com/AlpinDale?tab=repositories
 https://www.youtube.com/watch?v=IpHjDoW4ffw
 https://cursor.com/blog/kernels
 https://aryagxr.com/blogs/cuda-optimizing-layernorm
@@ -87,17 +115,23 @@ https://github.com/fattorib/CudaSoftmax
 https://danfu.org/
 https://sandyresearch.github.io/
 https://gpu.camp/
+https://github.com/xlite-dev/LeetCUDA
 
 GPU:
 https://chipsandcheese.com/p/blackwell-nvidias-massive-gpu
 https://leetarxiv.substack.com/p/learning-cuda-on-a-budget-on-google
 https://feldmann.nyc/blog/smem-microbenchmarks
+https://www.chipstrat.com/p/gpu-networking-basics-part-1
+https://charlesgrassi.dev/blog/gpu-cache-hierarchy/
 
 Twitter:
 Bookmarks
 https://irhum.github.io/blog/pjit/
 https://github.com/MekkCyber/TritonAcademy
 https://docs.unsloth.ai/
+https://colab.research.google.com/drive/1JqKqA1XWeLHvnYAc0wzrR4JBCnq43HyH#scrollTo=QoE2DGRZG2Ng
+https://github.com/unslothai/unsloth
+x.com/danielhanchen / YouTube
 https://www.deep-ml.com/problems
 https://hazyresearch.stanford.edu/
 https://hamzaelshafie.bearblog.dev/
@@ -140,6 +174,46 @@ https://blog.alpindale.net/posts/top_k_cuda/
 https://kalomaze.bearblog.dev/rl-lora-ddd/
 https://x.com/StefanoErmon/status/1986477376835047740
 https://x.com/sadernoheart/status/1987491712374038970
+https://www.himanshustwts.com/
+https://www.amazon.com/dp/1449373321?ref_=cm_sw_r_cp_ud_dp_SAZQ1NW67E3N3WERJV6E
+https://x.com/athleticKoder/status/1991114674767892539
+https://x.com/gm8xx8/status/1991266352666132627
+https://hebiao064.github.io/
+https://blog.underfit.ai/nanogpt-record
+https://sankalp.bearblog.dev/how-prompt-caching-works/
+https://www.arcee.ai/blog/the-trinity-manifesto
+https://modal.com/blog/
+https://x.com/archiexzzz/status/1996654917742895569
+https://veitner.bearblog.dev/
+chewingonchips.substack.com
+https://github.com/cfregly/ai-performance-engineering
+https://aurick.net/
+https://lmsys.org/blog/2025-12-17-minisgl/
+https://arxiv.org/abs/2512.14080
+https://hanlab.mit.edu/blog/infinite-context-length-with-global-but-constant-attention-memory
+https://github.com/gau-nernst/learn-cuda/tree/3b90ac9b3f624bdf1f6f78d02dcd533675d36573?tab=readme-ov-file
+https://www.aleksagordic.com/blog/vllm
+https://x.com/0xishand/status/2005361638887850275
+https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial
+https://medium.com/@weyaxi1/the-engineering-handbook-for-grpo-lora-with-verl-training-qwen2-5-on-multi-gpu-b2431a2a8e92
+https://guangxuanx.com/
+https://yue-zhang-2025.github.io/
+https://ngrok.com/blog/prompt-caching
+https://www.radicalnumerics.ai/blog/nvfp4-part1
+https://substack.com/inbox/post/184264883?r=6n53t&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true
+https://dev.samarthgoel.com/blog/post/llm-research?curius=6180
+https://nousresearch.com/moe-scaling-field-notes/
+https://github.com/anthropics/original_performance_takehome
+https://lmsys.org/blog/2026-01-21-novita-glm4/
+https://mistral.ai/news/debugging-memory-leak-in-vllm
+https://jonathanc.net/blog/vllm-flex-attention-from-scratch
+https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf
+https://x.com/o_v_shake/status/2015368249593233591
+https://t.co/uCt4rFAK3a
+https://hamzaelshafie.bearblog.dev/paged-attention-from-first-principles-a-view-inside-vllm/
+
+Distributed:
+https://github.com/deepseek-ai/DeepEP
 
 General:
 https://horace.io/brrr_intro.html
@@ -147,6 +221,9 @@ https://github.com/karpathy/llm.c
 https://siboehm.com/
 https://blog.ezyang.com/2019/05/pytorch-internals/
 https://www.amansanger.com/
+https://github.com/stas00/ml-engineering/tree/master
+Search for “Awesome” on GitHub (Awesome Inference, Awesome Quantization, etc.)
+https://sysml.cs.princeton.edu/
 
 C/C++:
 https://www.learncpp.com/
@@ -162,9 +239,12 @@ https://docs.nvidia.com/cuda/cuda-c-programming-guide/
 https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
 https://www.amazon.com/CUDA-Example-Introduction-General-Purpose-Programming/dp/0131387685
 https://www.amazon.com/Programming-Massively-Parallel-Processors-Hands/dp/0323912311
+https://github.com/tugot17/pmpp/tree/main
 https://github.com/gpu-mode/lectures
 https://modal.com/gpu-glossary/readme
 https://www.cs.utexas.edu/~rossbach/cs380p/papers/cuda-programming.pdf
+
+Graphs:
 
 Triton:
 https://openai.com/index/triton/
@@ -181,9 +261,17 @@ PTX:
 
 SASS:
 
+torchao:
+
+Hackathons:
+https://luma.com/9n27uem4
+
 Quantization:
+https://claude.ai/chat/f3204f5e-99e1-456a-b3ee-e068bc30593a
+https://claude.ai/chat/02eeb7da-31d5-4941-874b-2dcfb7c9af75
 https://franciscormendes.github.io/2024/05/16/quantization-1/
 https://leimao.github.io/article/Neural-Networks-Quantization/
+https://github.com/pprp/Awesome-LLM-Quantization
 
 Drug Discovery:
 https://fabianfuchsml.github.io/alphafold2/
@@ -192,3 +280,51 @@ https://openfold.readthedocs.io/en/latest/
 https://arxiv.org/html/2404.11068v1
 https://supercomputing-system-ai-lab.github.io/blogs/blog/megafold-an-open-sourced-alphafold-3-training-system/
 https://lupoglaz.github.io/OpenFold2/iterativeSE3Transformer.html
+
+RL:
+DeepCoder, DeepScaleR, AReaL, Light-R1, DAPO, Dr. GRPO, LOOP/RLOO, KodCode
+Distributed RL Asynchrony
+
+People:
+https://phucnguyen.dev/
+https://sustcsonglin.github.io/
+https://guangxuanx.com/
+
+SGLang:
+https://lmsys.org/blog/2025-12-17-minisgl/
+https://github.com/sgl-project/mini-sglang
+https://pytorch.org/blog/hybrid-models-meet-sglang-more-than-full-attention/
+https://docs.sglang.io/
+https://github.com/sgl-project
+https://github.com/sgl-project/sgl-learning-materials
+https://github.com/sgl-project/SpecForge
+https://cookbook.sglang.io/docs/intro
+https://www.sglang.io/community
+https://github.com/sgl-project/sglang/issues/10278
+
+DeepSpeed:
+https://www.deepspeed.ai/
+https://github.com/deepspeedai/DeepSpeed
+
+
+Miles/Slime:
+https://github.com/radixark/miles/issues
+https://lmsys.org/blog/2025-11-19-miles/
+https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/blob/main/rlhf/slime/spec/readme-en.md
+https://lmsys.org/blog/2025-11-25-fp8-rl/
+https://lmsys.org/blog/2025-12-03-miles-fsdp/
+https://github.com/radixark/miles/tree/main/examples/true_on_policy
+https://thudm.github.io/slime/index.html#
+https://thudm.github.io/slime/index.html#
+
+
+Open Source:
+RadixArk Miles, slime, SGLang, Megatron-LM, vLLM, TensorRT-LLM, FlashAttention, DeepSpeed, FSDP/DDP, torchtitan, DeepSeek/DeepEP, nemo, torchao, nanoGPT, llm.c, ThunderKittens, Triton, torch.compile/TorchDynamo, torchrl, NVIDIA Dynamo, CUTLASS/CuTe, TransformerEngine, Ollama, xFormers, Marlin, EETQ, Apex, ONXX Runtime, bitsandbytes, AutoGPTQ, llm-compressor, Composer, llama.cpp, Text Generation Inference, Triton Inference Server, trl, veRL, Areal, prime-rl
+
+MS/DD: OpenFold, ESMFold/ESM, RDKit, DeepChem, Uni-Fold, MACE, MatBench, Matminer, CHGNet, M3GNet, 
+
+https://claude.ai/chat/16e983e6-720b-4422-9dab-9203dd512b72
+https://claude.ai/chat/c0311761-f60e-495d-b3ac-1380d356370d
+
+Technical Debt:
+Inference Concepts, Forward/Backward Pass in LLMs, MoE, RL Concepts/Process (Loss, Forward, Backpropagate)/Updates, Git
