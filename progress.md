@@ -1,5 +1,8 @@
 # Progress
 
+## February 5
+Day 54 of ML Systems: I spent time learning about data parallelism, Ring AllReduce for averaging gradients, and ZeRO Stage 1. I added these topics to my DeepSpeed ZeRO article as well.
+
 ## February 4
 Day 53 of ML Systems: I decided to start studying open source repos and learning technical concepts / details while also mixing in work on PRs. I decided to study the ZeRO optimizer in DeepSpeed. I am also trying to write blog posts with all the technical things I learn. This is the start of my first one: https://sysgod.bearblog.dev/understanding-the-zero-optimizer-in-deepspeed-02-04-26/.
 
