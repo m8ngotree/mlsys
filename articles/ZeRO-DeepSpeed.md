@@ -157,7 +157,7 @@ The Stage 1 optimization uses the same forward and backward pass as before - eac
 
 ## Stage 1 Code
 
-In the DeepSpeed repo, lines 212-213 of the *deepspeed/runtime/zero/stage_1_and_2.py* file contains some code relevant to Stage 1.
+In the DeepSpeed repo, the *deepspeed/runtime/zero/stage_1_and_2.py* file contains code relevant to Stage 1. The DeepSpeedZeroOptimizer class inherits from the ZeroOptimizer base class, which ZeRO stages 1, 2, & 3 are built off of. Lines 212-213 of the *deepspeed/runtime/zero/stage_1_and_2.py* file contains the following code:
 
 ```
 self.partition_gradients = partition_grads
@@ -167,16 +167,121 @@ self.zero_stage_string = "ZeRO-2" if partition_grads else "ZeRO-1"
 Partitioning gradients is a feature in ZeRO Stage 2, so not including this optimization denotes that the code will use Stage 1.
 
 ```
+self.bit16_groups = []
+self.bit16_groups_flat = []
+
+self.parallel_partitioned_bit16_groups = []
+```
+
+Lines 293-299 initialize three lists: bit16_groups, bit16_groups_flat, & parallel_partitioned_bit16_groups. These deal with the concept of parameter groups, so I'll explain this first. The layers in a neural network can be different types (embedding, attention, feedforward, etc.). The weights in different layers should be treated differently by the optimizer. The parameter groups are essentially dictionaries whose key-value pairs contain information like the list of all parameters, the learning rate to use, & other features. This helps the optimizer know how to process the different layers. bit16_groups is a list of original parameter groups where each group of parameters is a separate list, bit16_groups_flat is the same list where parameters in a group are flattened into one large tensor, & parallel_partitioned_bit16_groups contains each group's parameters split into N partitions (N = number of GPUs) (all in 16-bit format). 
+
+```
 data_parallel_partitions = self.get_data_parallel_partitions(self.bit16_groups_flat[i], i)
-self.parallel_partitioned_bit16_groups.append(data_parallel_partitions)
+            self.parallel_partitioned_bit16_groups.append(data_parallel_partitions)
+```
 
+Lines 426-427 create the data parallel partitions by calling the get_data_parallel_partitions method. This creates even partitions based on the number of elements and number of GPUs (leftover elements are added to initial GPUs - e.g. if there are 100 elements and 8 GPUs, the 4 leftover elements are added to the first 4 GPUs). 
+
+One thing I didn't realize was that each GPU doesn't just store its partition - all GPUs store all partitions. This is because parallel_partitioned_bit16_groups is a view into the flat buffer (single 1D contiguous tensor self.bit16_groups_flat[i] that contains all the parameters from parameter group i concatenated together), not a separate storage. Every GPU needs the complete model to do the forward pass. 
+
+```
+self.bit16_groups_flat.append(flattened_buffer.to(get_accelerator().current_device_name()))
+```
+
+Line 413 moves the flat buffer to the GPU.
+
+Lines 426-427:
+
+```
+data_parallel_partitions = self.get_data_parallel_partitions(self.bit16_groups_flat[i], i)
+            self.parallel_partitioned_bit16_groups.append(data_parallel_partitions)
+```
+
+Lines 1768-1786:
+
+```
+def get_data_parallel_partitions(self, tensor, group_id):
+        partitions = []
+
+        dp = dist.get_world_size(group=self.real_dp_process_group[group_id])
+
+        total_num_elements = tensor.numel()
+
+        base_size = total_num_elements // dp
+        remaining = total_num_elements % dp
+
+        start = 0
+        for id in range(dp):
+            partition_size = base_size
+            if id < remaining:
+                partition_size = partition_size + 1
+            partitions.append(tensor.narrow(0, start, partition_size))
+            start = start + partition_size
+        return partitions
+```
+
+You can see that the tensor.narrow() function is used which is creating a view of the underlying storage, showing that all partitions share the same underlying storage.
+
+```
 weights_partition = self.parallel_partitioned_bit16_groups[i][partition_id].detach().clone().to(
-    device=self.device, dtype=self.master_weights_and_grads_dtype)
+                device=self.device, dtype=self.master_weights_and_grads_dtype)
+```
 
+Lines 448-449 create a partition of fp32 weights. It first indexes into the group number and then the partition_id. .detach() disconnects from PyTorch gradient tracking and .clone() makes a copy of the tensor. It is moved to the GPU and set to fp32 format according to master_weights_and_grads_dtype.
+
+```
 self.single_partition_of_fp32_groups.append(weights_partition)
+```
 
-param_group['params'] = [self.single_partition_of_fp32_groups[i]]
-``` 
+In Line 465, the new fp32 partition is appended to single_partition_of_fp32_groups. single_partition_of_fp32_groups contains a single master partition from each group after the loop iterating through each param group is done.
 
-## Adam Optimizer
-As a short aside, I'll explain how the Adam optimizer works.
+
+```
+self.single_partition_of_fp32_groups[
+                i].requires_grad = True  
+            param_group['params'] = [self.single_partition_of_fp32_groups[i]]
+```
+
+Lines 470-472 contain a critical part of Stage 1. param_group['params'] originally contains all params from the group, but the second line replaces this with only this GPU's partition for the group. The optimizer only sees 1/N of the parameters so, so it only creates 1/N states for these parameters.
+
+```
+for i, group in enumerate(self.bit16_groups):
+            self.timers(OPTIMIZER_GRADIENTS_TIMER).start()
+            partition_id = dist.get_rank(group=self.real_dp_process_group[i])
+```
+
+In the optimizer step (lines 2095-2097), the code loops through each parameter group. There is a path for both CPU & GPU - we will focus on the GPU path (lines 2121-2155).
+
+```
+self.free_grad_in_param_list(self.params_not_in_partition[i])
+
+self.single_partition_of_fp32_groups[i].grad = single_grad_partition
+
+self.free_grad_in_param_list(self.params_in_partition[i])
+
+self.unscale_and_clip_grads([single_grad_partition], scaled_global_grad_norm)
+
+self._optimizer_step(i)
+
+self.single_partition_of_fp32_groups[i].grad = None
+                del single_grad_partition
+                bit16_partitions = self.parallel_partitioned_bit16_groups[i]
+                fp32_partition = self.single_partition_of_fp32_groups[i]
+                bit16_partitions[partition_id].data.copy_(fp32_partition.data)
+```
+
+Each GPU frees the gradients for the parameters not in its partition. It then flattens the gradients for the current partition and converts to fp32. The gradients are then attached to the partition so the optimizer can view them. We can free the original gradients because they have been copied to the flat partition. The gradients are then unscaled and clipped. During training, the gradients are scaled up to prevent underflow, so we scale them down and clip them. The optimizer step is then called on the GPU's fp32 partition. After this, the fp32 gradients are deleted and the updated values are copied back to fp16 format.
+
+```
+all_gather_dp_groups(groups_flat=self.bit16_groups_flat,
+                             partitioned_param_groups=self.parallel_partitioned_bit16_groups,
+                             dp_process_group=self.real_dp_process_group,
+                             start_alignment_factor=self.nccl_start_alignment_factor,
+                             allgather_bucket_size=self.allgather_bucket_size)
+```
+
+Lastly, this AllGather operation on line 2164 gathers all the updated weights to allow each GPU to have the full updated model. The all_gather_dp_groups function loops through each parameter group. There is also logic for calculating sharding as large transfers like AllGather are broken into shards/chunks for efficiency.
+
+## Stage 2
+
+
