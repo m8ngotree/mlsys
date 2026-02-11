@@ -1,5 +1,8 @@
 # Progress
 
+## February 10
+Day 55 of ML Systems: I worked on understanding code in DeepSpeed that was relevant to ZeRO Stage 1 and added to blog by explaining some of the important aspects of the code. I finished covering Stage 1 and will move to Stage 2 tomorrow.
+
 ## February 5
 Day 54 of ML Systems: I spent time learning about data parallelism, Ring AllReduce for averaging gradients, and ZeRO Stage 1. I added these topics to my DeepSpeed ZeRO article as well.
 
