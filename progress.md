@@ -1,5 +1,8 @@
 # Progress
 
+## February 11
+Day 56 of ML Systems: I worked on understanding and writing about ZeRO Stage 2 code in DeepSpeed including the IPG Bucket System and gradient hooks.
+
 ## February 10
 Day 55 of ML Systems: I worked on understanding code in DeepSpeed that was relevant to ZeRO Stage 1 and added to blog by explaining some of the important aspects of the code. I finished covering Stage 1 and will move to Stage 2 tomorrow.
 
