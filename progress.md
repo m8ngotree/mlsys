@@ -1,7 +1,7 @@
 # Progress
 
 ## February 15
-Day 57 of ML Systems: I spent all day learning about MoE in torchtitan and writing my blog and walking through the code. I plan on continuing and finishing tomorrow.
+Day 57 of ML Systems: I spent all day learning about MoE in torchtitan and writing my blog and walking through the code. I focused on learning concepts such as routing, auxiliary-loss-free load balancing, & reordering. I plan on continuing and finishing tomorrow.
 
 ## February 11
 Day 56 of ML Systems: I worked on understanding and writing about ZeRO Stage 2 code in DeepSpeed including the IPG Bucket System and gradient hooks.
