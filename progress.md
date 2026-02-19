@@ -1,5 +1,8 @@
 # Progress
 
+## February 16
+Day 58 of ML Systems: I started going through Expert Parallelism code in torchtitan but I kind of got stuck because it was hard for me to understand. I'll just try again later.
+
 ## February 15
 Day 57 of ML Systems: I spent all day learning about MoE in torchtitan and writing my blog and walking through the code. I focused on learning concepts such as routing, auxiliary-loss-free load balancing, & reordering. I plan on continuing and finishing tomorrow.
 
