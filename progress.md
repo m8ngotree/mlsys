@@ -1,5 +1,8 @@
 # Progress
 
+## March 3
+Day 59 of ML Systems: I spent some more time reviewing and looking through new expert parallelism code in torchtitan. I learned about things like Distributed Tensors and how gradients are AllReduced across GPUs for tensor parallelism.
+
 ## February 16
 Day 58 of ML Systems: I started going through Expert Parallelism code in torchtitan but I kind of got stuck because it was hard for me to understand. I'll just try again later.
 
