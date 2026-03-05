@@ -1,5 +1,8 @@
 # Progress
 
+## March 4
+Day 60 of ML Systems: I worked on adding to my blog for MoEs in torchtitan by writing a section for how tensor parallelism is handled. I also spent time trying to come up with ideas for PRs to work on - I decided to learn/work on Least Loaded Expert Parallelism and the LAER-MOE papers.
+
 ## March 3
 Day 59 of ML Systems: I spent some more time reviewing and looking through new expert parallelism code in torchtitan. I learned about things like Distributed Tensors and how gradients are AllReduced across GPUs for tensor parallelism.
 
