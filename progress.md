@@ -1,5 +1,8 @@
 # Progress
 
+## March 10
+Day 61 of ML Systems: I just worked on reading through torchtitan code and took notes on the ExpertParallel class for my blog. I covered the code for partioning experts across GPUs as well as routing/transferring tokens to the GPU containing their selected expert as well as the _token_combine operation which sends the tokens back to their original GPUs.
+
 ## March 4
 Day 60 of ML Systems: I worked on adding to my blog for MoEs in torchtitan by writing a section for how tensor parallelism is handled. I also spent time trying to come up with ideas for PRs to work on - I decided to learn/work on Least Loaded Expert Parallelism and the LAER-MOE papers.
 
