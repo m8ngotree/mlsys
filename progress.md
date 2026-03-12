@@ -1,5 +1,8 @@
 # Progress
 
+## March 11
+Day 62 of ML Systems: I studied how Expert Parallelism is combined with Tensor/Sequence Parallelism and walked through the relevant code in torchtitan. I also briefly looked at DeepEP and got a basic understanding of what it is and how it's integrated into torchtitan.
+
 ## March 10
 Day 61 of ML Systems: I just worked on reading through torchtitan code and took notes on the ExpertParallel class for my blog. I covered the code for partioning experts across GPUs as well as routing/transferring tokens to the GPU containing their selected expert as well as the _token_combine operation which sends the tokens back to their original GPUs.
 
