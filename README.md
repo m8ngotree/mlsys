@@ -1,4 +1,4 @@
 # mlsys
 
-https://sysgod.bearblog.dev/
+https://m8ngotree.bearblog.dev/
 https://x.com/m8ngotree
