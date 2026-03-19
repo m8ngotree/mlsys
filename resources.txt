@@ -26,9 +26,17 @@ EVERYTHING ELSE
 
 READ:
 X BOOKMARKS
+https://jax-ml.github.io/scaling-book/
+https://huggingface.co/spaces/nanotron/ultrascale-playbook
+https://nousresearch.com/nouscoder-14b-a-competitive-olympiad-programming-model/
+https://soumith.ch/blog
+https://arxiv.org/abs/2603.07685
+https://www.baseten.com/inference-engineering/
 https://discuss.pytorch.org/t/distributed-w-torchtitan-optimizing-checkpointing-efficiency-with-pytorch-dcp/211250
 https://www.radicalnumerics.ai/blog/nvfp4-part1
+https://www.liquid.ai/company/blog
 https://phucnguyen.dev/
+https://djdumpling.github.io/2026/01/31/frontier_training.html#moe
 https://github.com/anthropics/original_performance_takehome
 https://nousresearch.com/moe-scaling-field-notes/
 https://cameronrwolfe.substack.com/p/moe-llms
@@ -184,7 +192,6 @@ https://sankalp.bearblog.dev/how-prompt-caching-works/
 https://www.arcee.ai/blog/the-trinity-manifesto
 https://modal.com/blog/
 https://x.com/archiexzzz/status/1996654917742895569
-https://veitner.bearblog.dev/
 chewingonchips.substack.com
 https://github.com/cfregly/ai-performance-engineering
 https://aurick.net/
@@ -211,6 +218,20 @@ https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pd
 https://x.com/o_v_shake/status/2015368249593233591
 https://t.co/uCt4rFAK3a
 https://hamzaelshafie.bearblog.dev/paged-attention-from-first-principles-a-view-inside-vllm/
+https://djdumpling.github.io/2026/01/31/frontier_training.html#moe
+https://www.workatafrontierlab.com/
+https://www.liquid.ai/company/blog
+https://sambhavg.github.io/blog/performance
+https://github.com/sgl-project/sglang/pull/18938
+https://arxiv.org/abs/2603.07685
+https://soumith.ch/blog
+https://nousresearch.com/nouscoder-14b-a-competitive-olympiad-programming-model/
+https://pytorch.org/blog/mxfp8-training-for-moes-1-3x-training-speedup-vs-bf16-for-llama4-scout-on-gb200-cluster-using-torchao-and-torchtitan/
+https://veitner.bearblog.dev/
+https://noumena.com/
+https://www.tylerromero.com/
+https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html
+https://www.interconnects.ai/
 
 Distributed:
 https://github.com/deepseek-ai/DeepEP
@@ -289,6 +310,7 @@ People:
 https://phucnguyen.dev/
 https://sustcsonglin.github.io/
 https://guangxuanx.com/
+https://sites.google.com/view/hbansal
 
 SGLang:
 https://lmsys.org/blog/2025-12-17-minisgl/
@@ -319,12 +341,6 @@ https://thudm.github.io/slime/index.html#
 
 
 Open Source:
-RadixArk Miles, slime, SGLang, Megatron-LM, vLLM, TensorRT-LLM, FlashAttention, DeepSpeed, FSDP/DDP, torchtitan, DeepSeek/DeepEP, nemo, torchao, nanoGPT, llm.c, ThunderKittens, Triton, torch.compile/TorchDynamo, torchrl, NVIDIA Dynamo, CUTLASS/CuTe, TransformerEngine, Ollama, xFormers, Marlin, EETQ, Apex, ONXX Runtime, bitsandbytes, AutoGPTQ, llm-compressor, Composer, llama.cpp, Text Generation Inference, Triton Inference Server, trl, veRL, Areal, prime-rl
+RadixArk Miles, slime, SGLang, Megatron-LM, vLLM, TensorRT-LLM, FlashAttention, DeepSpeed, PyTorch Distributed, FSDP/DDP, torchtitan, DeepSeek/DeepEP, nemo, torchao, nanoGPT, llm.c, ThunderKittens, Triton, FlashInfer, torch.compile/TorchDynamo, torchrl, NVIDIA Dynamo, CUTLASS/CuTe, SkyRL, TransformerEngine, Ollama, xFormers, Marlin, EETQ, Apex, ONXX Runtime, bitsandbytes, AutoGPTQ, llm-compressor, Composer, llama.cpp, Text Generation Inference, Triton Inference Server, trl, veRL, Areal, prime-rl
 
 MS/DD: OpenFold, ESMFold/ESM, RDKit, DeepChem, Uni-Fold, MACE, MatBench, Matminer, CHGNet, M3GNet, 
-
-https://claude.ai/chat/16e983e6-720b-4422-9dab-9203dd512b72
-https://claude.ai/chat/c0311761-f60e-495d-b3ac-1380d356370d
-
-Technical Debt:
-Inference Concepts, Forward/Backward Pass in LLMs, MoE, RL Concepts/Process (Loss, Forward, Backpropagate)/Updates, Git

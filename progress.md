@@ -1,5 +1,8 @@
 # Progress
 
+## March 18
+Day 63 of ML: I read the Olmix paper by AllenAI and decided to work on an experiment studying how the minimum reliable proxy model size scales with target model size for data mixing.
+
 ## March 11
 Day 62 of ML Systems: I studied how Expert Parallelism is combined with Tensor/Sequence Parallelism and walked through the relevant code in torchtitan. I also briefly looked at DeepEP and got a basic understanding of what it is and how it's integrated into torchtitan.
 
