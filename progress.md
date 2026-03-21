@@ -1,5 +1,8 @@
 # Progress
 
+## March 20
+Day 64 of ML: I spent the day brainstorming experiment ideas for LLM/data projects based off of my browsing of job descriptions at companies I would be interested in. I also started reading the EntiGraph paper and plan to do some experiments based on this paper.
+
 ## March 18
 Day 63 of ML: I read the Olmix paper by AllenAI and decided to work on an experiment studying how the minimum reliable proxy model size scales with target model size for data mixing.
 
