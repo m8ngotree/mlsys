@@ -1,5 +1,8 @@
 # Progress
 
+## March 25
+Day 65 of ML: I spent the evening work on setting up my experiment for determining how the minimum reliable proxy model size scales with target model size for data mixing. I created an experiment spec with Claude and used Claude Code to code it up. I plan to modify the experiment to reduce costs and read through the code tomorrow.
+
 ## March 20
 Day 64 of ML: I spent the day brainstorming experiment ideas for LLM/data projects based off of my browsing of job descriptions at companies I would be interested in. I also started reading the EntiGraph paper and plan to do some experiments based on this paper.
 
