@@ -1,5 +1,8 @@
 # Progress
 
+## March 28
+Day 66: I spent the day looking into LLM coding/data projects. I learned about deduplication concepts like Jaccard similary, MinHash, MinHash LSH, and LSHBloom. I created a MinHash LSH pipeline using the datasketch library to dedup The Stack dataset and analyzed how much was deduped across different languages (CSS, TypeScript, Lua, & Julia were the languages with highest duplicate percentage). 
+
 ## March 25
 Day 65 of ML: I spent the evening work on setting up my experiment for determining how the minimum reliable proxy model size scales with target model size for data mixing. I created an experiment spec with Claude and used Claude Code to code it up. I plan to modify the experiment to reduce costs and read through the code tomorrow.
 
