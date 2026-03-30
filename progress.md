@@ -1,5 +1,8 @@
 # Progress
 
+## March 29
+Day 67: I spent a few hours researching ways I could generate synthetic coding data for languages/frameworks like Triton, PyTorch, JAX, & Rust. I plan on working on a few of these projects for the next few weeks.
+
 ## March 28
 Day 66: I spent the day looking into LLM coding/data projects. I learned about deduplication concepts like Jaccard similary, MinHash, MinHash LSH, and LSHBloom. I created a MinHash LSH pipeline using the datasketch library to dedup The Stack dataset and analyzed how much was deduped across different languages (CSS, TypeScript, Lua, & Julia were the languages with highest duplicate percentage). 
 
