@@ -1,5 +1,8 @@
 # Progress
 
+## March 31
+Day 68 of ML: I spent more time today researching ideas for scalable data collection for LLM coding. I'm really interested in the way a lot of LLM coding papers are using GitHub to generate training data from commits/PRs. I also fleshed out some ideas to generate synthetic datasets for Triton, Rust, PyTorch, & JAX.
+
 ## March 29
 Day 67: I spent a few hours researching ways I could generate synthetic coding data for languages/frameworks like Triton, PyTorch, JAX, & Rust. I plan on working on a few of these projects for the next few weeks.
 
