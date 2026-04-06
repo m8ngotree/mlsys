@@ -1,5 +1,11 @@
 # Progress
 
+## April 5
+Day 70 of ML: I spent the day reading papers like SWE-Universe and SWE-Synth and thought about ideas/experiments/projects to do based on these papers. I took a lot of notes which I'll post in separate tweets, but I think I'll just keep reading papers and doing experiments/projects I find interesting.
+
+## April 2
+Day 69 of ML: I worked out setting up my framework for generating synthetic PyTorch code with a focus on intermediate representations like FX graphs and creating a graph break dataset.
+
 ## March 31
 Day 68 of ML: I spent more time today researching ideas for scalable data collection for LLM coding. I'm really interested in the way a lot of LLM coding papers are using GitHub to generate training data from commits/PRs. I also fleshed out some ideas to generate synthetic datasets for Triton, Rust, PyTorch, & JAX.
 
