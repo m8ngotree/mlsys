@@ -1,5 +1,8 @@
 # Progress
 
+## April 10
+Day 71 of ML: I mainly just spent the day brainstorming ideas and browsing papers I wanted to read. I started a little bit on SWE-Nwzt but plan to read CUDA LLM papers tomorrow.
+
 ## April 5
 Day 70 of ML: I spent the day reading papers like SWE-Universe and SWE-Synth and thought about ideas/experiments/projects to do based on these papers. I took a lot of notes which I'll post in separate tweets, but I think I'll just keep reading papers and doing experiments/projects I find interesting.
 
