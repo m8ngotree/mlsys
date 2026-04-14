@@ -1,5 +1,11 @@
 # Progress
 
+## April 13
+Day 73 of ML: I read the CUDA-L1 paper and came up with the idea to apply the pipeline to Triton. I plan on reading the CUDA-L2 paper tomorrow and coming up with more ideas.
+
+## April 11
+Day 72 of ML: I read the CUDA Agent paper, studied the scalable synthetic data pipeline, & decided to recreate it myself.
+
 ## April 10
 Day 71 of ML: I mainly just spent the day brainstorming ideas and browsing papers I wanted to read. I started a little bit on SWE-Nwzt but plan to read CUDA LLM papers tomorrow.
 
