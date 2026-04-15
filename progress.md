@@ -1,5 +1,8 @@
 # Progress
 
+## April 14
+Day 74 of ML: I read the CUDA-L2 Paper.
+
 ## April 13
 Day 73 of ML: I read the CUDA-L1 paper and came up with the idea to apply the pipeline to Triton. I plan on reading the CUDA-L2 paper tomorrow and coming up with more ideas.
 
