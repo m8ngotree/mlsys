@@ -1,5 +1,8 @@
 # Progress
 
+## April 15
+Day 75 of ML: I read the GrandCode paper from the DeepReinforce AI group.
+
 ## April 14
 Day 74 of ML: I read the CUDA-L2 Paper.
 
