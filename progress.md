@@ -1,5 +1,8 @@
 # Progress
 
+## April 18
+Day 76 of ML: I read the SWE-World, SecRepoBench, Sec-Bench, & Cyber-Zero papers and researched some ideas to implement.
+
 ## April 15
 Day 75 of ML: I read the GrandCode paper from the DeepReinforce AI group.
 
