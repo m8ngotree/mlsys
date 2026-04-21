@@ -1,5 +1,8 @@
 # Progress
 
+## April 20
+Day 77 of ML: Day 77 of ML: I read more papers such as SWE-Dev, SWE-Next, & Repo2Run and thought about more project ideas to do.
+
 ## April 18
 Day 76 of ML: I read the SWE-World, SecRepoBench, Sec-Bench, & Cyber-Zero papers and researched some ideas to implement.
 
