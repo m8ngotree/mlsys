@@ -1,15 +1,18 @@
 # Progress
 
 ## April 26
+Day 82 of ML: I started work on coding up the CUDA Agent pipeline.
+
+## April 25
 Day 81 of ML: I coded up the data collection / environment creation pipelines from the SWE-CI paper.
 
-## April 24
+## April 23
 Day 80 of ML: I coded up the data collection pipeline for the CUDA-Agent paper.
 
-## April 23
+## April 22
 Day 79 of ML: I spent time rereading kernel papers such as CUDA-Agent, CUDA-L1, and CUDA-L2.
 
-## April 22
+## April 21
 Day 78 of ML: I spent time reading papers such as SWE-CI and coming up with more ideas.
 
 ## April 20
