@@ -1,5 +1,17 @@
 # Progress
 
+## May 1
+Day 86 of ML: I spent time reading the SWE-Lego paper and thinking about how to extend it.
+
+## April 30
+Day 85 of ML: I spent time reading the Dr Triton and SWE-Dev papers.
+
+## April 29
+Day 84 of ML: I spent time applying to companies.
+
+## April 27
+Day 83 of ML: I spent time applying to companies.
+
 ## April 26
 Day 82 of ML: I started work on coding up the CUDA Agent pipeline.
 
