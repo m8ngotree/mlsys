@@ -1,5 +1,8 @@
 # Progress
 
+## May 7
+Day 87 of ML: I read the SWE-Playground Paper & started the SWE-Perf paper.
+
 ## May 1
 Day 86 of ML: I spent time reading the SWE-Lego paper and thinking about how to extend it.
 
