@@ -1,5 +1,8 @@
 # Progress
 
+## May 9
+Day 88 of ML: I spent time reading the Pull Requests as a Training Signal paper and thinking about how I could replicate it.
+
 ## May 7
 Day 87 of ML: I read the SWE-Playground Paper & started the SWE-Perf paper.
 
