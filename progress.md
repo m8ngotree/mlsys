@@ -1,5 +1,8 @@
 # Progress
 
+## May 11
+Day 89 of ML: I spent time reading the SWE-fficiency paper and brainstorming ideas from other benchmark papers.
+
 ## May 9
 Day 88 of ML: I spent time reading the Pull Requests as a Training Signal paper and thinking about how I could replicate it.
 
