@@ -1,5 +1,11 @@
 # Progress
 
+## May 14
+Day 91 of ML: I spent time re-reading CUDA papers like CUDA Agent, CUDA-L1, & CUDA-L2 to think of benchmarks I could create.
+
+## May 13
+Day 90 of ML: I spent time reading coding benchmark papers such as ProgramBench, FeatureBench, etc. to think of benchmarks/evals I could create.
+
 ## May 11
 Day 89 of ML: I spent time reading the SWE-fficiency paper and brainstorming ideas from other benchmark papers.
 
