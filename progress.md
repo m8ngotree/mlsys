@@ -1,5 +1,8 @@
 # Progress
 
+## May 17
+Day 92 of ML: Day 92 of ML: I spent time reading the FrontierSmith paper and applying to some positions.
+
 ## May 14
 Day 91 of ML: I spent time re-reading CUDA papers like CUDA Agent, CUDA-L1, & CUDA-L2 to think of benchmarks I could create.
 
