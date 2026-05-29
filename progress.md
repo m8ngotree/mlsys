@@ -1,5 +1,14 @@
 # Progress
 
+## May 25
+Day 95 of ML: I continued working on the SWE-Synth repo to prepare for running the full bug generation pipeline.
+
+## May 23
+Day 94 of ML: I worked on modifying the SWE-Synth pipeline to generate more complex bugs across functions.
+
+## May 21
+Day 93 of ML: I did some work trying to figure out how to generate more synthetic repos using the SWE-Playground / LoCoBench repos.
+
 ## May 17
 Day 92 of ML: Day 92 of ML: I spent time reading the FrontierSmith paper and applying to some positions.
 
