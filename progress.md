@@ -1,5 +1,8 @@
 # Progress
 
+## June 5
+Day 96 of ML: I read the FrontierSmith paper again and planned out what I need to implement to scale up the pipeline myself.
+
 ## May 25
 Day 95 of ML: I continued working on the SWE-Synth repo to prepare for running the full bug generation pipeline.
 
