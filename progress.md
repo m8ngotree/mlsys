@@ -1,5 +1,8 @@
 # Progress
 
+## June 7
+Day 97 of ML: I worked on coding up the FrontierSmith synthesis pipeline and trying to synthesize problems E2E through the pipeline and dealing with a bunch of errors.
+
 ## June 5
 Day 96 of ML: I read the FrontierSmith paper again and planned out what I need to implement to scale up the pipeline myself.
 
