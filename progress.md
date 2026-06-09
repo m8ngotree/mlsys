@@ -1,5 +1,8 @@
 # Progress
 
+## June 8
+Day 98 of ML: I read the FrontierCS paper and applied to some positions.
+
 ## June 7
 Day 97 of ML: I worked on coding up the FrontierSmith synthesis pipeline and trying to synthesize problems E2E through the pipeline and dealing with a bunch of errors.
 
