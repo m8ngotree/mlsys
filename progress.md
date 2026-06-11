@@ -1,5 +1,8 @@
 # Progress
 
+## June 10
+Day 99 of ML: I worked on contributing the 3D Erdos Unit Distance problem to Frontier-CS and submitted a PR.
+
 ## June 8
 Day 98 of ML: I read the FrontierCS paper and applied to some positions.
 
