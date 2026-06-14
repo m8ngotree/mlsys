@@ -1,5 +1,8 @@
 # Progress
 
+##June 13
+Day 100 of ML: I contributed 4 more advanced mathematical optimization problems to Frontier-CS and skimmed the DeNovoSWE paper.
+
 ## June 10
 Day 99 of ML: I worked on contributing the 3D Erdos Unit Distance problem to Frontier-CS and submitted a PR.
 
