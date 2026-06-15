@@ -1,6 +1,9 @@
 # Progress
 
-##June 13
+## June 14
+Day 101 of ML: I did the first two chapters of the Scaling Book and learned a lot about TPUs.
+
+## June 13
 Day 100 of ML: I contributed 4 more advanced mathematical optimization problems to Frontier-CS and skimmed the DeNovoSWE paper.
 
 ## June 10
