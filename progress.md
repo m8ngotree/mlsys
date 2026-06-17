@@ -1,5 +1,11 @@
 # Progress
 
+## June 16
+Day 103 of ML: I worked on solving problems in Chapter 3 of the scaling book.
+
+## June 15
+Day 102 of ML: I read Part 3 of the scaling book and started working on the problems.
+
 ## June 14
 Day 101 of ML: I did the first two chapters of the Scaling Book and learned a lot about TPUs.
 
