@@ -1,5 +1,8 @@
 # Progress
 
+## June 17
+Day 104 of ML: I mostly finished solving Chapter 3 problems in the scaling book.
+
 ## June 16
 Day 103 of ML: I worked on solving problems in Chapter 3 of the scaling book.
 
