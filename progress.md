@@ -1,5 +1,8 @@
 # Progress
 
+## June 24
+Day 109 of ML: I started reading Chapter 7 of the scaling book.
+
 ## June 23
 Day 108 of ML: I finished Chapter 6 of the Scaling Book.
 
