@@ -1,5 +1,8 @@
 # Progress
 
+## June 28
+Day 110 of ML: I finished reading and did some problems in Chapter 7 of the scaling book.
+
 ## June 24
 Day 109 of ML: I started reading Chapter 7 of the scaling book.
 
