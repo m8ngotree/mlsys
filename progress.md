@@ -1,5 +1,8 @@
 # Progress
 
+## July 3
+Day 112 of ML: I completed Chapter 8 of the scaling book.
+
 ## June 30
 Day 111 of ML: I finished Chapter 7 of the scaling book.
 
