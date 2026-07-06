@@ -1,5 +1,9 @@
 # Progress
 
+
+## July 5
+Day 113 of ML: I spent an hour reading Chapter 9 of the scaling book.
+
 ## July 3
 Day 112 of ML: I completed Chapter 8 of the scaling book.
 
