@@ -1,5 +1,8 @@
 # Progress
 
+## August 16
+Day 115 of ML: I spent time reading the CommBench paper today.
+
 ## July 7
 Day 114 of ML: I finished Chapter 9 of the Scaling Book.
 
