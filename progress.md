@@ -1,5 +1,8 @@
 # Progress
 
+## August 18
+Day 116 of ML: I finished reading the CommBench paper.
+
 ## August 16
 Day 115 of ML: I spent time reading the CommBench paper today.
 
