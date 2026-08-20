@@ -1,5 +1,8 @@
 # Progress
 
+## August 19
+Day 117 of ML: I read the ParallelKernelBench paper.
+
 ## August 18
 Day 116 of ML: I finished reading the CommBench paper.
 
