@@ -1,5 +1,8 @@
 # Progress
 
+## August 21
+Day 118 of ML: I started reading the Hawkeye paper.
+
 ## August 19
 Day 117 of ML: I read the ParallelKernelBench paper.
 
