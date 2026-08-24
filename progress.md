@@ -1,5 +1,11 @@
 # Progress
 
+## August 23
+Day 120 of ML: I finished the Hawkeye paper and read the DSL-Monkeys paper.
+
+## August 22
+Day 119 of ML: I read more of the Hawkeye paper.
+
 ## August 21
 Day 118 of ML: I started reading the Hawkeye paper.
 
