@@ -1,5 +1,8 @@
 # Progress
 
+## August 28
+Day 121 of ML: I read the JAXBench paper.
+
 ## August 23
 Day 120 of ML: I finished the Hawkeye paper and read the DSL-Monkeys paper.
 
