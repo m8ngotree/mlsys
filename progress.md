@@ -1,5 +1,11 @@
 # Progress
 
+## August 30
+Day 123 of ML: I read more of the Pallas docs and focused more on pipelining and matmuls.
+
+## August 29
+Day 122 of ML: I started reading the Pallas docs and learned about the basic and pipelining.
+
 ## August 28
 Day 121 of ML: I read the JAXBench paper.
 
