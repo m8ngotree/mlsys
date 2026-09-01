@@ -1,5 +1,8 @@
 # Progress
 
+## August 31
+Day 124 of ML: I read more of the Pallas matmul docs.
+
 ## August 30
 Day 123 of ML: I read more of the Pallas docs and focused more on pipelining and matmuls.
 
