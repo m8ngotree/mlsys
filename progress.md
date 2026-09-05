@@ -1,5 +1,8 @@
 # Progress
 
+## September 4
+Day 126 of ML: I finished reading the scalar prefetch Pallas docs.
+
 ## September 1
 Day 125 of ML: I started reading the scalar prefetch Pallas docs.
 
