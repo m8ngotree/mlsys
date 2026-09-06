@@ -1,5 +1,8 @@
 # Progress
 
+## September 5
+Day 127 of ML: I read the distributed computing Pallas docs.
+
 ## September 4
 Day 126 of ML: I finished reading the scalar prefetch Pallas docs.
 
