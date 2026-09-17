@@ -1,5 +1,8 @@
 # Progress
 
+## September 17
+Day 128 of ML: I worked on making a TPU v5e Hawkeye taxonomy.
+
 ## September 5
 Day 127 of ML: I read the distributed computing Pallas docs.
 
