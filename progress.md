@@ -1,6 +1,9 @@
 # Progress
 
 ## September 17
+Day 129 of ML: I worked on studying basic Pallas/JAX syntax for matmuls.
+
+## September 16
 Day 128 of ML: I worked on making a TPU v5e Hawkeye taxonomy.
 
 ## September 5
