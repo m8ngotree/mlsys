@@ -1,5 +1,14 @@
 # Progress
 
+## September 21
+Day 132 of ML: I studied Pallas TPU matmul kernels.
+
+## September 20
+Day 131 of ML: I studied basic fused Pallas TPU kernels.
+
+## September 19
+Day 130 of ML: I studied Pallas/TPU pipelining.
+
 ## September 17
 Day 129 of ML: I worked on studying basic Pallas/JAX syntax for matmuls.
 
