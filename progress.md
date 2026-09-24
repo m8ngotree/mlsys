@@ -1,5 +1,8 @@
 # Progress
 
+## September 23
+Day 133 of ML: I worked on studying scalar prefetch and matmul kernels.
+
 ## September 21
 Day 132 of ML: I studied Pallas TPU matmul kernels.
 
