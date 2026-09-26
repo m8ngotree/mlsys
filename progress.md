@@ -1,5 +1,8 @@
 # Progress
 
+## September 24
+Day 134 of ML: I spent time figuring out how to rent TPUs and ran/debugged my Hawkeye TPU code.
+
 ## September 23
 Day 133 of ML: I worked on studying scalar prefetch and matmul kernels.
 
