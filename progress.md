@@ -1,5 +1,8 @@
 # Progress
 
+## October 23
+Day 135 of ML: I started working on writing a linear attention kernel on Trainium and learning the math/concepts behind chunked attention.
+
 ## September 24
 Day 134 of ML: I spent time figuring out how to rent TPUs and ran/debugged my Hawkeye TPU code.
 
